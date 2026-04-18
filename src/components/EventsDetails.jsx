@@ -31,7 +31,17 @@ const EventsDetails = () => {
 
   return (
     <div className="container py-4 bg-light">
-      <h1></h1>
+      <h1
+        className="fs-2 text-danger"
+        style={{
+          fontFamily: "'Pacifico', cursive",
+          fontWeight: "normal", // Cursive fonts usually don't need bold
+          fontSize: "2.5rem",
+        }}
+      >
+        Meetup
+      </h1>
+      <hr />
       {data ? (
         <div className="row p-3">
           <div className="col-6">
@@ -127,7 +137,7 @@ const EventsDetails = () => {
                             {speaker.name}
                           </h6>
                           <p className="card-text text-muted small">
-                            {speaker.role }
+                            {speaker.role}
                           </p>
                         </div>
                       </div>
