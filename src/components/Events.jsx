@@ -4,7 +4,9 @@ import { useState } from "react";
 const Events = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchByType, setSearchByType] = useState("");
-  const { data, loading, error } = useFetch("http://localhost:5500/events");
+  const { data, loading, error } = useFetch(
+    "https://bi-assignment1-backend-eight.vercel.app/events",
+  );
 
   // console.log(data);
 

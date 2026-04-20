@@ -5,7 +5,7 @@ const EventsDetails = () => {
   const { topicName } = useParams();
 
   const { data, loading, error } = useFetch(
-    `http://localhost:5500/events/${topicName}`,
+    `https://bi-assignment1-backend-eight.vercel.app/events/${topicName}`,
   );
 
   console.log(data);
