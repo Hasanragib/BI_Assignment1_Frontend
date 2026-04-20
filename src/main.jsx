@@ -8,6 +8,7 @@ import Events from "./components/Events.jsx";
 import EventsDetails from "./components/EventsDetails.jsx";
 
 const router = createBrowserRouter([
+  { path: "/", element: <App /> },
   { path: "/events", element: <Events /> },
   {
     path: "/events/:topicName",
