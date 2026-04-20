@@ -5,7 +5,7 @@ const Events = () => {
   const [searchQuery, setSearchQuery] = useState("");
   const [searchByType, setSearchByType] = useState("");
   const { data, loading, error } = useFetch(
-    "https://bi-assignment1-backend-39grncbmi-hasanragibs-projects.vercel.app/events",
+    "https://bi-assignment1-backend-eight.vercel.app/events",
   );
 
   // console.log(data);
