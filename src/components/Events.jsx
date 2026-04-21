@@ -1,5 +1,6 @@
 import useFetch from "../useFetch";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Events = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -123,6 +124,12 @@ const Events = () => {
                       </small>
                     </span>
                     <h5 className="card-title">{event.topic}</h5>
+                    <Link
+                      to={`/events/${event.topic}`}
+                      className="btn btn-sm btn-outline-danger mt-2"
+                    >
+                      View Details
+                    </Link>
                   </div>
                 </div>
               </div>
